@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_background"
+    tools:context=".Activities.QuestionActivity">
+
+   <ImageView
+       android:layout_width="120dp"
+       android:layout_height="120dp"
+       android:src="@drawable/brain_image"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="20dp"
+      android:id="@+id/brain_image" />
+
+<RelativeLayout
+    android:layout_width="320dp"
+    android:layout_height="150dp"
+   android:background="@drawable/question_block"
+   android:layout_below="@id/brain_image"
+   android:layout_centerHorizontal="true"
+   android:layout_marginTop="30dp"
+    android:paddingHorizontal="20dp"
+    android:id="@+id/question_block"
+    >
+
+   <TextView
+       android:id="@+id/question"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerInParent="true"
+       android:fontFamily="sans-serif-light"
+       android:text="Which planet in the solar system is the smallest?"
+       android:textAlignment="center"
+       android:textColor="@color/black"
+       android:textSize="22dp"
+       android:textStyle="bold" />
+</RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="275dp"
+    android:layout_height="60dp"
+    android:background="@drawable/long_white_button"
+   android:layout_centerHorizontal="true"
+   android:layout_below="@id/question_block"
+   android:layout_marginTop="50dp"
+   android:id="@+id/optionA"
+   android:paddingLeft="25dp"
+    >
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="A:"
+       android:layout_centerVertical="true"
+      android:textSize="20sp"
+      android:textColor="@color/black"
+      android:fontFamily="sans-serif-light"
+      android:textStyle="bold"
+      android:id="@+id/letterA"
+       />
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerInParent="true"
+       android:fontFamily="sans-serif-medium"
+       android:text="Pluto"
+       android:textColor="@color/black"
+       android:textSize="19sp"
+       android:id="@+id/optionAText"
+       />
+</RelativeLayout>
+   <RelativeLayout
+       android:layout_width="275dp"
+       android:layout_height="60dp"
+       android:background="@drawable/long_white_button"
+       android:layout_centerHorizontal="true"
+       android:layout_below="@id/optionA"
+       android:layout_marginTop="20dp"
+       android:id="@+id/optionB"
+       android:paddingLeft="25dp"
+       >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="B:"
+          android:layout_centerVertical="true"
+          android:textSize="20sp"
+          android:textColor="@color/black"
+          android:fontFamily="sans-serif-light"
+          android:textStyle="bold"
+          android:id="@+id/letterB"
+          />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:fontFamily="sans-serif-medium"
+          android:text="Earth"
+          android:textColor="@color/black"
+          android:textSize="19sp"
+          android:id="@+id/optionBText"
+          />
+   </RelativeLayout>
+
+   <RelativeLayout
+       android:layout_width="275dp"
+       android:layout_height="60dp"
+       android:background="@drawable/long_white_button"
+       android:layout_centerHorizontal="true"
+       android:layout_below="@id/optionB"
+       android:layout_marginTop="20dp"
+       android:id="@+id/optionC"
+       android:paddingStart="25dp"
+       >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="C:"
+          android:layout_centerVertical="true"
+          android:textSize="20sp"
+          android:textColor="@color/black"
+          android:fontFamily="sans-serif-light"
+          android:textStyle="bold"
+          tools:ignore="HardcodedText"
+          android:id="@+id/letterC"
+          />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:fontFamily="sans-serif-medium"
+          android:text="Saturn"
+          android:textColor="@color/black"
+          android:textSize="19sp"
+          android:id="@+id/optionCText"
+          tools:ignore="HardcodedText" />
+   </RelativeLayout>
+
+   <RelativeLayout
+       android:layout_width="275dp"
+       android:layout_height="60dp"
+       android:background="@drawable/long_white_button"
+       android:layout_centerHorizontal="true"
+       android:layout_below="@id/optionC"
+       android:layout_marginTop="20dp"
+       android:id="@+id/optionD"
+       android:paddingLeft="25dp"
+       >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="D:"
+          android:layout_centerVertical="true"
+          android:textSize="20sp"
+          android:textColor="@color/black"
+          android:fontFamily="sans-serif-light"
+          android:textStyle="bold"
+          android:id="@+id/letterD"
+          />
+
+      <TextView
+          android:id="@+id/optionDText"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:fontFamily="sans-serif-medium"
+          android:text="Mars"
+          android:textColor="@color/black"
+          android:textSize="19sp"
+          tools:ignore="HardcodedText"
+          />
+   </RelativeLayout>
+
+
+</RelativeLayout>
